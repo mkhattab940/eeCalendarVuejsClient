@@ -15,4 +15,11 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  css: {
+    devSourcemap: true 
+  },
+  // 2. Build sourcemaps (useful if you ever debug the 'dist' folder)
+  build: {
+    sourcemap: true,
+  },
 })
